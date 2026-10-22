@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KLING — I Crashed the Star Wars Afterparty | True Digital Hustle</title>
+<meta name="description" content="How I swapped myself and the Star Wars cast into a real party video with Kling 4.0. The exact prompt, the reference setup and the mistakes to skip. Free, no email.">
+<meta property="og:title" content="KLING — Free Prompt + Method">
+<meta property="og:description" content="One real party clip. Six photos. Kling 4.0 swapped every person. Here's the exact prompt. Free, no email.">
+<meta property="og:image" content="poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0a09;--card:#171412;--line:#2a2521;--ink:#f3ede4;--mute:#a79d90;--gold:#e0a84a;--gold2:#f2c775;--purple:#6c2bd9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 50% -10%,rgba(224,168,74,.12),transparent 55%),repeating-linear-gradient(0deg,transparent 0 39px,rgba(255,255,255,.015) 39px 40px),repeating-linear-gradient(90deg,transparent 0 39px,rgba(255,255,255,.015) 39px 40px);pointer-events:none;z-index:0}
+main{position:relative;z-index:1}
+.mono{font-family:"JetBrains Mono",monospace;letter-spacing:.18em;text-transform:uppercase;font-size:.72rem}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+section{padding:92px 0;border-top:1px solid var(--line)}
+h1{font-family:"Playfair Display",serif;font-weight:900;font-size:clamp(2.4rem,7.5vw,4.6rem);line-height:1.03;margin:.25em 0;letter-spacing:-.01em}
+h2{font-family:"Playfair Display",serif;font-weight:700;font-size:clamp(1.7rem,4vw,2.5rem);margin:.15em 0 .5em;line-height:1.15}
+h3{font-family:"Playfair Display",serif;font-size:1.3rem;margin:.7em 0 .3em}
+p{color:var(--mute)}
+p.lead{font-size:1.08rem;color:var(--ink)}
+.eyebrow{color:var(--gold);margin-bottom:14px}
+.hero{min-height:88vh;display:flex;align-items:center;border-top:0;padding:70px 0}
+.btn{display:inline-block;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#1a1206;font-family:"JetBrains Mono",monospace;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;padding:18px 34px;border-radius:999px;text-decoration:none;font-weight:600;box-shadow:0 10px 40px rgba(224,168,74,.22)}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold);box-shadow:none}
+.video{max-width:640px;margin:34px auto 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.video video{display:block;width:100%}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:18px 0}
+.card .head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.tag{font-family:"JetBrains Mono",monospace;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:5px 10px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 16px;margin:8px 0 12px;font-family:"JetBrains Mono",monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+pre{background:#0d0c0b;border:1px solid var(--line);border-radius:10px;padding:18px;font-family:"JetBrains Mono",monospace;font-size:.78rem;line-height:1.6;color:#d9d1c5;white-space:pre-wrap;word-wrap:break-word;margin:0;max-height:340px;overflow:auto}
+pre.open{max-height:none}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+button{cursor:pointer;font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;border-radius:8px;padding:12px 18px;border:1px solid var(--gold);background:transparent;color:var(--gold)}
+button.primary{background:var(--gold);color:#1a1206}
+button.copied{background:#1f7a3c;border-color:#1f7a3c;color:#fff}
+.steps{counter-reset:s;display:grid;gap:12px}
+.step{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:"JetBrains Mono",monospace;color:var(--gold);font-size:1.1rem;padding-top:3px}
+.step b{display:block;color:var(--ink)}
+.step span{color:var(--mute);font-size:.94rem}
+.tip{border-left:3px solid var(--gold);padding:6px 0 6px 16px;margin:16px 0;color:var(--ink)}
+.tip span{color:var(--mute)}
+.big{background:linear-gradient(180deg,rgba(108,43,217,.2),rgba(108,43,217,.05));border:1px solid rgba(108,43,217,.5);border-radius:16px;padding:30px;margin:26px 0}
+.big h3{margin-top:0}
+.center{text-align:center}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin:24px 0}
+.stat div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
+.stat b{display:block;font-family:"Playfair Display",serif;font-size:2rem;color:var(--gold)}
+.stat span{font-family:"JetBrains Mono",monospace;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.shot{font-family:"JetBrains Mono",monospace;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:28px 0 6px}
+footer{padding:60px 0 46px;text-align:center;border-top:1px solid var(--line)}
+footer .mono{color:var(--mute);letter-spacing:.12em}
+@media(max-width:700px){section{padding:62px 0}.video{max-width:100%}}
+
+.video{max-width:760px}
+.refs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:18px 0}
+.refs div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.refs b{display:block;font-family:"JetBrains Mono",monospace;color:var(--gold);font-size:.8rem;letter-spacing:.08em}
+.refs span{color:var(--ink);font-size:.92rem}
+.disc{font-size:.8rem;color:var(--mute);margin-top:14px}
+</style>
+</head>
+<body>
+<main>
+
+<section class="hero">
+<div class="wrap center">
+<div class="mono eyebrow">True Digital Hustle · Kling 4.0</div>
+<h1>I CRASHED THE<br>STAR WARS AFTERPARTY.</h1>
+<p class="lead" style="max-width:640px;margin:0 auto 10px">One real party clip. Six photos. Kling 4.0 swapped every person and kept everything else.</p>
+<p style="max-width:640px;margin:0 auto 30px">Same room, same lights, same camera moves, same dance. Just me in the lead with Vader, stormtroopers, Chewie, Mando and Grogu around me. This page has the exact prompt, how to set up the references, and what failed before it worked. Free, no email.</p>
+<a class="btn" href="#method">Get the method ↓</a>
+<div class="video"><video controls playsinline preload="metadata" poster="poster.jpg" src="afterparty.mp4"></video></div>
+<div class="mono" style="margin-top:14px;color:var(--mute)">The result · 10 seconds · Kling 4.0 video edit · 1080p</div>
+</div>
+</section>
+
+<section id="kling">
+<div class="wrap">
+<div class="mono eyebrow">What's new</div>
+<h2>Kling 4.0 just dropped.</h2>
+<p>Kling launched 4.0 to everyone on October 15, and it's a real jump. The part that made this video possible is <b style="color:var(--ink)">video edit</b>: you give it a real clip plus reference photos, tell it who becomes who, and it rebuilds the people while keeping the scene, the camera and the motion.</p>
+<div class="stat">
+<div><b>30s</b><span>In one generation</span></div>
+<div><b>10</b><span>Keyframes</span></div>
+<div><b>15</b><span>Reference assets</span></div>
+<div><b>1</b><span>Real clip needed</span></div>
+</div>
+</div>
+</section>
+
+<section id="method">
+<div class="wrap">
+<div class="mono eyebrow">The method</div>
+<h2>Swap the people, keep the party.</h2>
+<div class="steps">
+<div class="step"><div><b>Find your source clip.</b><span>A short real video with one clear main person moving toward the camera. Party and wedding dance clips are perfect: lots of people, lots of motion, the camera does the work.</span></div></div>
+<div class="step"><div><b>Dress your character for the scene.</b><span>Take your character sheet and restyle the outfit first (prompt below). Your face stays locked, the clothes match the vibe. I went plum velvet for a party.</span></div></div>
+<div class="step"><div><b>Collect one clean photo per character.</b><span>Full body, one character per image, plain-ish background, no weapon pointed at the camera. Real movie stills beat costume-shop photos every time.</span></div></div>
+<div class="step"><div><b>Load everything in order.</b><span>On Higgsfield pick Kling 4.0, mode Video Edit. Upload the clip, then your sheet first so it's @Image1, then the characters in the order the prompt expects.</span></div></div>
+<div class="step"><div><b>Paste the prompt and generate.</b><span>Keep it 16:9 to match the clip. It comes back the same length as your source, with the original audio.</span></div></div>
+</div>
+<div class="refs">
+<div><b>@Video1</b><span>Your party clip</span></div>
+<div><b>@Image1</b><span>You (outfit sheet)</span></div>
+<div><b>@Image2</b><span>Darth Vader</span></div>
+<div><b>@Image3</b><span>Stormtrooper</span></div>
+<div><b>@Image4</b><span>Chewbacca</span></div>
+<div><b>@Image5</b><span>The Mandalorian</span></div>
+<div><b>@Image6</b><span>Grogu</span></div>
+</div>
+<div class="big">
+<h3>The tool</h3>
+<p style="color:var(--ink)">I made this on <a href="https://higgsfield.ai?fpr=tdh" target="_blank" rel="noopener" style="color:var(--gold2)">Higgsfield</a>, which has Kling 4.0 with video edit plus Nano Banana Pro for the outfit sheet, all in one place. If you sign up through my link you get a personal discount of up to 50% off, active for three hours from the moment you log in, so have your clip and photos ready first.</p>
+<p style="margin-bottom:0"><a class="btn" href="https://higgsfield.ai?fpr=tdh" target="_blank" rel="noopener">Try Higgsfield ↗</a></p>
+<p class="disc">Affiliate disclosure: I earn a commission if you sign up through this link, at no extra cost to you.</p>
+</div>
+</div>
+</section>
+
+<section id="prompts">
+<div class="wrap">
+<div class="mono eyebrow">The prompts</div>
+<h2>Copy, swap your details, generate.</h2>
+<div class="shot">Step 1 · Outfit sheet</div>
+<div class="card"><div class="head"><h3 style="margin:0">Party outfit sheet</h3><span class="tag">Nano Banana Pro</span></div>
+<div class="meta"><span>Input: your character sheet</span><span>Image to image</span></div>
+<pre id="p1">Recreate this exact character reference sheet with the same person, same four-panel layout (full-body front view, full-body side profile, full-body back view, close-up head-and-shoulders portrait), same neutral dark grey studio backdrop and soft studio lighting. Keep the face, skin tone, hair, facial hair, accessories and body build 100% identical to the reference. Change ONLY the clothing to a stylish night party outfit: a fitted deep plum purple velvet blazer with satin black lapels, a black silk button-up shirt with the top two buttons open, a thin gold chain necklace, slim black tailored trousers, and polished black leather Chelsea boots. Photorealistic, natural skin texture, sharp detail, no text, no logos.</pre>
+<div class="actions"><button class="primary" data-copy="p1">Copy prompt</button><button data-toggle="p1">Expand</button></div></div>
+<div class="shot">Step 2 · The swap</div>
+<div class="card"><div class="head"><h3 style="margin:0">The Star Wars afterparty</h3><span class="tag">Kling 4.0 · Video Edit</span></div>
+<div class="meta"><span>@Video1 + 6 images</span><span>16:9</span><span>1080p</span></div>
+<pre id="p2">Edit @Video1 by replacing only the people. Keep everything else exactly the same as @Video1 : the room, the lighting, the decorations, the camera movement, the framing, the timing and every dance move.
+
+The main dancer who dances through the crowd and up to the camera becomes [YOUR NAME] @Image1 wearing [YOUR OUTFIT, exactly as on your reference]. His face, hair and features match @Image1 exactly. He performs exactly the same dance moves, gestures and path as the original dancer.
+
+The person dancing right behind him becomes Darth Vader @Image2 with his black helmet, chest panel, black armor and long black cape exactly as in @Image2 copying that person&#x27;s dance moves. His hands are empty, no lightsaber.
+
+Replace other guests around the dance floor with the real Star Wars characters, each matching their reference exactly in full size and detail and copying the movements of the guest they replace: several Imperial Stormtroopers @Image3 in clean white and black armor and white helmets exactly as in @Image3 dancing in the crowd with empty hands, no blasters. Chewbacca @Image4 tall and covered in long brown and gray fur with his bandolier exactly as in @Image4 dancing and waving his arms. The Mandalorian @Image5 in his silver beskar helmet and armor over brown clothing exactly as in @Image5 dancing in the crowd. Near the end of the clip Grogu @Image6 the small green child with big ears in his tan robe exactly as in @Image6 dances on the dance floor near the camera.
+
+These are the real Star Wars characters exactly as they look in the movies, not people in cheap costumes. Nobody holds a weapon or lightsaber. All other guests stay as ordinary party guests unchanged. Keep the original audio.</pre>
+<div class="actions"><button class="primary" data-copy="p2">Copy prompt</button><button data-toggle="p2">Expand</button></div></div>
+<p class="tip">Replace <b>[YOUR NAME]</b> and <b>[YOUR OUTFIT]</b> with your own details. <span>Everything else works as is.</span></p>
+</div>
+</section>
+
+<section id="tips">
+<div class="wrap">
+<div class="mono eyebrow">Learned the hard way</div>
+<h2>Four things that cost me generations</h2>
+<p class="tip"><b>Helmets and suits swap clean. Faces don't.</b><br><span>My first cast was horror villains. Freddy and Michael came out looking like guys in Halloween costumes. Characters defined by a full suit or helmet, like Vader and stormtroopers, come out looking like the real thing.</span></p>
+<p class="tip"><b>Your main dancer is the strongest swap.</b><br><span>Put yourself on the person closest to the camera. Background swaps get softer and smaller, so give them simple, iconic looks.</span></p>
+<p class="tip"><b>Say "empty hands" out loud.</b><br><span>If the reference photo has a lightsaber or blaster, the AI brings it. Write "hands empty, no weapon" next to that character.</span></p>
+<p class="tip"><b>Tag every character every time.</b><br><span>Write the @Image tag next to each name, with a plain space on each side. Untagged names get guessed.</span></p>
+</div>
+</section>
+
+<section id="start" class="center">
+<div class="wrap">
+<div class="mono eyebrow">Your turn</div>
+<h2>Now crash a party of your own.</h2>
+<p style="max-width:560px;margin:0 auto">Any clip, any cast. Wedding dance with the Avengers, a club with Squid Game guards. Follow for the next one.</p>
+<a class="btn" href="https://higgsfield.ai?fpr=tdh" target="_blank" rel="noopener" style="margin:22px 8px 0">Get the tool — up to 50% off ↗</a>
+<a class="btn ghost" href="https://www.instagram.com/truedigitalhustle/" target="_blank" rel="noopener" style="margin:22px 8px 0">Follow @truedigitalhustle ↗</a>
+<p class="disc">Fan-made AI parody. Star Wars characters belong to Lucasfilm/Disney; not affiliated or endorsed.</p>
+</div>
+</section>
+
+<footer><div class="mono">True Digital Hustle · Made with AI</div></footer>
+</main>
+<script>
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{const t=document.getElementById(b.dataset.copy).innerText;try{await navigator.clipboard.writeText(t)}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}const o=b.textContent;b.textContent='Copied ✓';b.classList.add('copied');setTimeout(()=>{b.textContent=o;b.classList.remove('copied')},1600)}));
+document.querySelectorAll('[data-toggle]').forEach(b=>b.addEventListener('click',()=>{const p=document.getElementById(b.dataset.toggle);p.classList.toggle('open');b.textContent=p.classList.contains('open')?'Collapse':'Expand'}));
+</script>
+</body>
+</html>
